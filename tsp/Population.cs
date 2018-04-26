@@ -12,6 +12,18 @@ namespace Tsp
         /// Private copy of the best tour found so far by the Genetic Algorithm.
         /// </summary>
         private Tour bestTour = null;
+        private int imprv;
+        public int Imprv
+        {
+            get
+            {
+                return imprv;
+            }
+            set
+            {
+                imprv = value;
+            }
+        }
         /// <summary>
         /// The best tour found so far by the Genetic Algorithm.
         /// </summary>

@@ -88,7 +88,7 @@ namespace Tsp
             population = new Population();
             population.CreateRandomPopulation(populationSize, cityList, rand, chanceToUseCloseCity);
 
-            displayTour(population.BestTour, 0, false);
+            displayTour(population.BestTour, 0, false, population.Imprv);
 
             bool foundNewBestTour = false;
             int generation;
@@ -102,11 +102,11 @@ namespace Tsp
 
                 if (foundNewBestTour)
                 {
-                    displayTour(population.BestTour, generation, false);
+                    displayTour(population.BestTour, generation, false, population.Imprv +=1);
                 }
             }
 
-            displayTour(population.BestTour, generation, true);
+            displayTour(population.BestTour, generation, true, population.Imprv);
         }
 
         /// <summary>
@@ -192,11 +192,11 @@ namespace Tsp
         /// <param name="bestTour">The best tour the algorithm has found so far.</param>
         /// <param name="generationNumber">How many generations have been performed.</param>
         /// <param name="complete">Is the TSP algorithm complete.</param>
-        void displayTour(Tour bestTour, int generationNumber, bool complete)
+        void displayTour(Tour bestTour, int generationNumber, bool complete, int imprv)
         {
             if (foundNewBestTour != null)
             {
-                this.foundNewBestTour(this, new TspEventArgs(cityList, bestTour, generationNumber, complete));
+                this.foundNewBestTour(this, new TspEventArgs(cityList, bestTour, generationNumber, complete,imprv));
             }
         }
     }

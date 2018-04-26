@@ -87,8 +87,12 @@ namespace Tsp
         public void DrawTour(object sender, TspEventArgs e)
         {
             this.lastFitnessValue.Text = Math.Round(e.BestTour.Fitness, 2).ToString(CultureInfo.CurrentCulture);
+            
             this.lastIterationValue.Text = e.Generation.ToString(CultureInfo.CurrentCulture);
 
+            e.Imprv++;
+
+            this.NumberOfImprv.Text = e.Imprv.ToString();
             if (cityImage == null)
             {
                 cityImage = new Bitmap(tourDiagram.Width, tourDiagram.Height);
@@ -124,8 +128,8 @@ namespace Tsp
 
             if (e.Complete)
             {
-                StartButton.Text = "Begin";
-                StatusLabel.Text = "Open a City List or click the map to place cities.";
+                StartButton.Text = "Начать";
+                StatusLabel.Text = "Откройте XML файл с городами или укажите города мышкой";
                 StatusLabel.ForeColor = Color.Black;
             }
         }
@@ -365,6 +369,16 @@ namespace Tsp
         }
 
         private void tourDiagram_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TspForm_Load(object sender, EventArgs e)
         {
 
         }

@@ -69,6 +69,8 @@ namespace Tsp
             this.NumberCloseCitiesLabel = new System.Windows.Forms.Label();
             this.CloseCityOddsTextBox = new System.Windows.Forms.TextBox();
             this.CloseCityOddsLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NumberOfImprv = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tourDiagram)).BeginInit();
             this.SuspendLayout();
             // 
@@ -305,7 +307,7 @@ namespace Tsp
             // NumberCitiesValue
             // 
             this.NumberCitiesValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumberCitiesValue.Location = new System.Drawing.Point(593, 480);
+            this.NumberCitiesValue.Location = new System.Drawing.Point(524, 468);
             this.NumberCitiesValue.Name = "NumberCitiesValue";
             this.NumberCitiesValue.Size = new System.Drawing.Size(48, 13);
             this.NumberCitiesValue.TabIndex = 13;
@@ -348,11 +350,30 @@ namespace Tsp
             this.CloseCityOddsLabel.TabIndex = 17;
             this.CloseCityOddsLabel.Text = "Берем город сосед %";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(461, 480);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Число улучшений ";
+            // 
+            // NumberOfImprv
+            // 
+            this.NumberOfImprv.AutoSize = true;
+            this.NumberOfImprv.Location = new System.Drawing.Point(582, 480);
+            this.NumberOfImprv.Name = "NumberOfImprv";
+            this.NumberOfImprv.Size = new System.Drawing.Size(0, 13);
+            this.NumberOfImprv.TabIndex = 20;
+            // 
             // TspForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 503);
+            this.Controls.Add(this.NumberOfImprv);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CloseCityOddsTextBox);
             this.Controls.Add(this.CloseCityOddsLabel);
             this.Controls.Add(this.NumberCloseCitiesTextBox);
@@ -384,6 +405,7 @@ namespace Tsp
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TspForm";
             this.Text = "Генетический алгоритм для решение задачи коммивояжера";
+            this.Load += new System.EventHandler(this.TspForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tourDiagram)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -420,6 +442,8 @@ namespace Tsp
         private System.Windows.Forms.Label NumberCloseCitiesLabel;
         private System.Windows.Forms.TextBox CloseCityOddsTextBox;
         private System.Windows.Forms.Label CloseCityOddsLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label NumberOfImprv;
     }
 }
 

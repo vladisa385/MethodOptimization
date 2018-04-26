@@ -25,12 +25,13 @@ namespace Tsp
         /// <param name="bestTour">The tour that connects all the cities.</param>
         /// <param name="generation">Which generation is this.</param>
         /// <param name="complete">Is this the last update before we are done.</param>
-        public TspEventArgs(Cities cityList, Tour bestTour, int generation, bool complete)
+        public TspEventArgs(Cities cityList, Tour bestTour, int generation, bool complete, int imprv)
         {
             this.cityList = cityList;
             this.bestTour = bestTour;
             this.generation = generation;
             this.complete = complete;
+            this.imprv = imprv; 
         }
 
         /// <summary>Private copy of the list of cities.</summary>
@@ -84,5 +85,18 @@ namespace Tsp
                 complete = value;
             }
         }
-    }
+        private int imprv;
+        public int Imprv
+        {
+            get
+            {
+                return imprv;
+            }
+            set
+            {
+                imprv = value;
+            }
+        }
+    
+}
 }

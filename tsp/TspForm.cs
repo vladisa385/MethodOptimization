@@ -1,16 +1,4 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////
-// File Name: TspForm.cs
-//      Date: 06/01/2006
-// Copyright (c) 2006 Michael LaLena. All rights reserved.  (www.lalena.com)
-// Permission to use, copy, modify, and distribute this Program and its documentation,
-//  if any, for any purpose and without fee is hereby granted, provided that:
-//   (i) you not charge any fee for the Program, and the Program not be incorporated
-//       by you in any software or code for which compensation is expected or received;
-//   (ii) the copyright notice listed above appears in all copies;
-//   (iii) both the copyright notice and this Agreement appear in all supporting documentation; and
-//   (iv) the name of Michael LaLena or lalena.com not be used in advertising or publicity
-//          pertaining to distribution of the Program without specific, written prior permission. 
-///////////////////////////////////////////////////////////////////////////////////////////////////
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -202,46 +190,46 @@ namespace Tsp
 
             if (populationSize <= 0)
             {
-                MessageBox.Show("You must specify a Population Size", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1 ,MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вы должны указать размер популяции", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1 ,MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if (maxGenerations <= 0)
             {
-                MessageBox.Show("You must specify a Maximum Number of Generations", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вы должны указать максимальное количество итераций", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if ((mutation < 0) || (mutation > 100))
             {
-                MessageBox.Show("Mutation must be between 0 and 100.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Мутация должна быть между 0 и 100.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if ((groupSize < 2) || ( groupSize > populationSize ))
             {
-                MessageBox.Show("You must specify a Group (Neighborhood) Size between 2 and the population size.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вы должны указать соседей между 2 и размером популяции.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if ((numberOfCloseCities < 3) || (numberOfCloseCities >= cityList.Count))
             {
-                MessageBox.Show("The number of nearby cities to evaluate for the greedy initial populations must be more than 3 and less than the total number of cities.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if ((chanceUseCloseCity < 0) || (chanceUseCloseCity > 95))
             {
-                MessageBox.Show("The odds of using a nearby city when creating the initial population must be between 0% - 95%.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вероятность города соседа должна быть между 0 и 95", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if (seed < 0)
             {
-                MessageBox.Show("You must specify a Seed for the Random Number Generator", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Вы должны указать ДСЧ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
             if (cityList.Count < 5)
             {
-                MessageBox.Show("You must either load a City List file, or click the map to place at least 5 cities. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+                MessageBox.Show("Городов должно быть не меньше 5 ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
                 return;
             }
 
-            this.StartButton.Text = "Stop";
+            this.StartButton.Text = "Стоп";
             ThreadPool.QueueUserWorkItem( new WaitCallback(BeginTsp));
         }
 
@@ -299,7 +287,7 @@ namespace Tsp
             {
                 if (tsp != null)
                 {
-                    StatusLabel.Text = "Cannot alter city list while running";
+                    StatusLabel.Text = "Невозможно добавить город во время работы";
                     StatusLabel.ForeColor = Color.Red;
                     return;
                 }
@@ -329,7 +317,7 @@ namespace Tsp
         {
             if (tsp != null)
             {
-                StatusLabel.Text = "Cannot alter city list while running";
+                StatusLabel.Text = "Невозможно добавить город во время работы";
                 StatusLabel.ForeColor = Color.Red;
                 return;
             }
@@ -349,7 +337,7 @@ namespace Tsp
         {
             if (tsp != null)
             {
-                StatusLabel.Text = "Cannot alter city list while running";
+                StatusLabel.Text = "Невозможно добавить город во время работы";
                 StatusLabel.ForeColor = Color.Red;
                 return;
             }

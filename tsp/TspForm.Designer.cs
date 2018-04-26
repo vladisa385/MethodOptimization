@@ -63,7 +63,6 @@ namespace Tsp
             this.selectFileButton = new System.Windows.Forms.Button();
             this.mutationTextBox = new System.Windows.Forms.TextBox();
             this.mutationLabel = new System.Windows.Forms.Label();
-            this.TitleLabel = new System.Windows.Forms.Label();
             this.NumberCitiesLabel = new System.Windows.Forms.Label();
             this.NumberCitiesValue = new System.Windows.Forms.Label();
             this.NumberCloseCitiesTextBox = new System.Windows.Forms.TextBox();
@@ -82,7 +81,7 @@ namespace Tsp
             this.tourDiagram.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tourDiagram.Location = new System.Drawing.Point(12, 28);
             this.tourDiagram.Name = "tourDiagram";
-            this.tourDiagram.Size = new System.Drawing.Size(408, 419);
+            this.tourDiagram.Size = new System.Drawing.Size(440, 419);
             this.tourDiagram.TabIndex = 0;
             this.tourDiagram.TabStop = false;
             this.tourDiagram.Click += new System.EventHandler(this.tourDiagram_Click);
@@ -91,7 +90,7 @@ namespace Tsp
             // populationSizeTextBox
             // 
             this.populationSizeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.populationSizeTextBox.Location = new System.Drawing.Point(428, 56);
+            this.populationSizeTextBox.Location = new System.Drawing.Point(458, 44);
             this.populationSizeTextBox.Name = "populationSizeTextBox";
             this.populationSizeTextBox.Size = new System.Drawing.Size(116, 21);
             this.populationSizeTextBox.TabIndex = 1;
@@ -101,7 +100,7 @@ namespace Tsp
             // 
             this.PopulationSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PopulationSizeLabel.AutoSize = true;
-            this.PopulationSizeLabel.Location = new System.Drawing.Point(428, 40);
+            this.PopulationSizeLabel.Location = new System.Drawing.Point(458, 28);
             this.PopulationSizeLabel.Name = "PopulationSizeLabel";
             this.PopulationSizeLabel.Size = new System.Drawing.Size(116, 13);
             this.PopulationSizeLabel.TabIndex = 0;
@@ -149,7 +148,7 @@ namespace Tsp
             // StartButton
             // 
             this.StartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.StartButton.Location = new System.Drawing.Point(448, 436);
+            this.StartButton.Location = new System.Drawing.Point(461, 424);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(87, 34);
             this.StartButton.TabIndex = 10;
@@ -161,7 +160,7 @@ namespace Tsp
             // 
             this.fileNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fileNameLabel.AutoSize = true;
-            this.fileNameLabel.Location = new System.Drawing.Point(432, 308);
+            this.fileNameLabel.Location = new System.Drawing.Point(462, 296);
             this.fileNameLabel.Name = "fileNameLabel";
             this.fileNameLabel.Size = new System.Drawing.Size(133, 13);
             this.fileNameLabel.TabIndex = 0;
@@ -170,7 +169,7 @@ namespace Tsp
             // fileNameTextBox
             // 
             this.fileNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.fileNameTextBox.Location = new System.Drawing.Point(428, 324);
+            this.fileNameTextBox.Location = new System.Drawing.Point(458, 312);
             this.fileNameTextBox.Name = "fileNameTextBox";
             this.fileNameTextBox.Size = new System.Drawing.Size(116, 21);
             this.fileNameTextBox.TabIndex = 6;
@@ -180,7 +179,7 @@ namespace Tsp
             // 
             this.maxGenerationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.maxGenerationLabel.AutoSize = true;
-            this.maxGenerationLabel.Location = new System.Drawing.Point(428, 152);
+            this.maxGenerationLabel.Location = new System.Drawing.Point(458, 140);
             this.maxGenerationLabel.Name = "maxGenerationLabel";
             this.maxGenerationLabel.Size = new System.Drawing.Size(197, 13);
             this.maxGenerationLabel.TabIndex = 0;
@@ -189,7 +188,7 @@ namespace Tsp
             // maxGenerationTextBox
             // 
             this.maxGenerationTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.maxGenerationTextBox.Location = new System.Drawing.Point(428, 167);
+            this.maxGenerationTextBox.Location = new System.Drawing.Point(458, 155);
             this.maxGenerationTextBox.Name = "maxGenerationTextBox";
             this.maxGenerationTextBox.Size = new System.Drawing.Size(116, 21);
             this.maxGenerationTextBox.TabIndex = 4;
@@ -199,7 +198,7 @@ namespace Tsp
             // 
             this.groupSizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupSizeLabel.AutoSize = true;
-            this.groupSizeLabel.Location = new System.Drawing.Point(428, 116);
+            this.groupSizeLabel.Location = new System.Drawing.Point(458, 104);
             this.groupSizeLabel.Name = "groupSizeLabel";
             this.groupSizeLabel.Size = new System.Drawing.Size(147, 13);
             this.groupSizeLabel.TabIndex = 0;
@@ -208,7 +207,7 @@ namespace Tsp
             // groupSizeTextBox
             // 
             this.groupSizeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupSizeTextBox.Location = new System.Drawing.Point(428, 130);
+            this.groupSizeTextBox.Location = new System.Drawing.Point(458, 118);
             this.groupSizeTextBox.Name = "groupSizeTextBox";
             this.groupSizeTextBox.Size = new System.Drawing.Size(116, 21);
             this.groupSizeTextBox.TabIndex = 3;
@@ -217,7 +216,7 @@ namespace Tsp
             // randomSeedTextBox
             // 
             this.randomSeedTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.randomSeedTextBox.Location = new System.Drawing.Point(428, 284);
+            this.randomSeedTextBox.Location = new System.Drawing.Point(458, 272);
             this.randomSeedTextBox.Name = "randomSeedTextBox";
             this.randomSeedTextBox.Size = new System.Drawing.Size(116, 21);
             this.randomSeedTextBox.TabIndex = 5;
@@ -227,7 +226,7 @@ namespace Tsp
             // 
             this.randomSeedLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.randomSeedLabel.AutoSize = true;
-            this.randomSeedLabel.Location = new System.Drawing.Point(428, 268);
+            this.randomSeedLabel.Location = new System.Drawing.Point(458, 256);
             this.randomSeedLabel.Name = "randomSeedLabel";
             this.randomSeedLabel.Size = new System.Drawing.Size(90, 13);
             this.randomSeedLabel.TabIndex = 0;
@@ -236,7 +235,7 @@ namespace Tsp
             // openCityListButton
             // 
             this.openCityListButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.openCityListButton.Location = new System.Drawing.Point(429, 378);
+            this.openCityListButton.Location = new System.Drawing.Point(459, 366);
             this.openCityListButton.Name = "openCityListButton";
             this.openCityListButton.Size = new System.Drawing.Size(113, 23);
             this.openCityListButton.TabIndex = 8;
@@ -247,7 +246,7 @@ namespace Tsp
             // clearCityListButton
             // 
             this.clearCityListButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.clearCityListButton.Location = new System.Drawing.Point(429, 407);
+            this.clearCityListButton.Location = new System.Drawing.Point(459, 395);
             this.clearCityListButton.Name = "clearCityListButton";
             this.clearCityListButton.Size = new System.Drawing.Size(113, 23);
             this.clearCityListButton.TabIndex = 9;
@@ -267,7 +266,7 @@ namespace Tsp
             // selectFileButton
             // 
             this.selectFileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.selectFileButton.Location = new System.Drawing.Point(429, 349);
+            this.selectFileButton.Location = new System.Drawing.Point(459, 337);
             this.selectFileButton.Name = "selectFileButton";
             this.selectFileButton.Size = new System.Drawing.Size(113, 23);
             this.selectFileButton.TabIndex = 7;
@@ -278,7 +277,7 @@ namespace Tsp
             // mutationTextBox
             // 
             this.mutationTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.mutationTextBox.Location = new System.Drawing.Point(428, 94);
+            this.mutationTextBox.Location = new System.Drawing.Point(458, 82);
             this.mutationTextBox.Name = "mutationTextBox";
             this.mutationTextBox.Size = new System.Drawing.Size(116, 21);
             this.mutationTextBox.TabIndex = 2;
@@ -288,27 +287,16 @@ namespace Tsp
             // 
             this.mutationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.mutationLabel.AutoSize = true;
-            this.mutationLabel.Location = new System.Drawing.Point(428, 80);
+            this.mutationLabel.Location = new System.Drawing.Point(458, 68);
             this.mutationLabel.Name = "mutationLabel";
             this.mutationLabel.Size = new System.Drawing.Size(148, 13);
             this.mutationLabel.TabIndex = 10;
             this.mutationLabel.Text = "Вероятность мутации %";
             // 
-            // TitleLabel
-            // 
-            this.TitleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.TitleLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(20, 4);
-            this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(528, 16);
-            this.TitleLabel.TabIndex = 11;
-            this.TitleLabel.Text = "Генетический алгоритм в задаче коммивояжера";
-            this.TitleLabel.Click += new System.EventHandler(this.TitleLabel_Click);
-            // 
             // NumberCitiesLabel
             // 
             this.NumberCitiesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumberCitiesLabel.Location = new System.Drawing.Point(446, 479);
+            this.NumberCitiesLabel.Location = new System.Drawing.Point(458, 468);
             this.NumberCitiesLabel.Name = "NumberCitiesLabel";
             this.NumberCitiesLabel.Size = new System.Drawing.Size(64, 13);
             this.NumberCitiesLabel.TabIndex = 12;
@@ -317,7 +305,7 @@ namespace Tsp
             // NumberCitiesValue
             // 
             this.NumberCitiesValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumberCitiesValue.Location = new System.Drawing.Point(508, 480);
+            this.NumberCitiesValue.Location = new System.Drawing.Point(593, 480);
             this.NumberCitiesValue.Name = "NumberCitiesValue";
             this.NumberCitiesValue.Size = new System.Drawing.Size(48, 13);
             this.NumberCitiesValue.TabIndex = 13;
@@ -325,7 +313,7 @@ namespace Tsp
             // NumberCloseCitiesTextBox
             // 
             this.NumberCloseCitiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NumberCloseCitiesTextBox.Location = new System.Drawing.Point(428, 204);
+            this.NumberCloseCitiesTextBox.Location = new System.Drawing.Point(458, 192);
             this.NumberCloseCitiesTextBox.Name = "NumberCloseCitiesTextBox";
             this.NumberCloseCitiesTextBox.Size = new System.Drawing.Size(116, 21);
             this.NumberCloseCitiesTextBox.TabIndex = 15;
@@ -335,7 +323,7 @@ namespace Tsp
             // 
             this.NumberCloseCitiesLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.NumberCloseCitiesLabel.AutoSize = true;
-            this.NumberCloseCitiesLabel.Location = new System.Drawing.Point(428, 188);
+            this.NumberCloseCitiesLabel.Location = new System.Drawing.Point(458, 176);
             this.NumberCloseCitiesLabel.Name = "NumberCloseCitiesLabel";
             this.NumberCloseCitiesLabel.Size = new System.Drawing.Size(179, 13);
             this.NumberCloseCitiesLabel.TabIndex = 14;
@@ -344,7 +332,7 @@ namespace Tsp
             // CloseCityOddsTextBox
             // 
             this.CloseCityOddsTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CloseCityOddsTextBox.Location = new System.Drawing.Point(428, 244);
+            this.CloseCityOddsTextBox.Location = new System.Drawing.Point(458, 232);
             this.CloseCityOddsTextBox.Name = "CloseCityOddsTextBox";
             this.CloseCityOddsTextBox.Size = new System.Drawing.Size(116, 21);
             this.CloseCityOddsTextBox.TabIndex = 18;
@@ -354,7 +342,7 @@ namespace Tsp
             // 
             this.CloseCityOddsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.CloseCityOddsLabel.AutoSize = true;
-            this.CloseCityOddsLabel.Location = new System.Drawing.Point(428, 228);
+            this.CloseCityOddsLabel.Location = new System.Drawing.Point(458, 216);
             this.CloseCityOddsLabel.Name = "CloseCityOddsLabel";
             this.CloseCityOddsLabel.Size = new System.Drawing.Size(135, 13);
             this.CloseCityOddsLabel.TabIndex = 17;
@@ -364,14 +352,13 @@ namespace Tsp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 503);
+            this.ClientSize = new System.Drawing.Size(649, 503);
             this.Controls.Add(this.CloseCityOddsTextBox);
             this.Controls.Add(this.CloseCityOddsLabel);
             this.Controls.Add(this.NumberCloseCitiesTextBox);
             this.Controls.Add(this.NumberCloseCitiesLabel);
             this.Controls.Add(this.NumberCitiesValue);
             this.Controls.Add(this.NumberCitiesLabel);
-            this.Controls.Add(this.TitleLabel);
             this.Controls.Add(this.mutationTextBox);
             this.Controls.Add(this.mutationLabel);
             this.Controls.Add(this.selectFileButton);
@@ -396,7 +383,7 @@ namespace Tsp
             this.Controls.Add(this.tourDiagram);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TspForm";
-            this.Text = "Traveling Salesman Problem";
+            this.Text = "Генетический алгоритм для решение задачи коммивояжера";
             ((System.ComponentModel.ISupportInitialize)(this.tourDiagram)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -427,7 +414,6 @@ namespace Tsp
         private System.Windows.Forms.Button selectFileButton;
         private System.Windows.Forms.TextBox mutationTextBox;
         private System.Windows.Forms.Label mutationLabel;
-        private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Label NumberCitiesLabel;
         private System.Windows.Forms.Label NumberCitiesValue;
         private System.Windows.Forms.TextBox NumberCloseCitiesTextBox;
